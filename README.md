@@ -75,5 +75,5 @@
 ## Special Thanks 👏
 
  - Special thanks to ACM leadership for giving us the opportunity for Besties to happen
- - Bingus
+ - And special thanks to viewers like you. Thank you[.](https://www.youtube.com/watch?v=F6jWppEDoV8)
 
