@@ -3,18 +3,19 @@
 
 ## MVP 🏆
 
-- Add the ability to take your Dripp within the app
-- Allow users to list the clothes that they’re wearing in the photo
-- Add friends and see their Dripps from an inbox
-- Notify users with "<b>⚠️💦 ITS TIME TO DRIPP 💦⚠️</b>"
+- Create desktop website with which to host game
+- Create phone website to play game with
+- Set up backend to coordinate game between two screens
+- Set up connection between two individual “Besties” phones
+- Allow two “Besties” to take group photo
+
 
 
 ## Stretch Goals 📊
 
-- Add instagram-like library feature to see a user's previous posts
-- Links clothes directly to store from where it can be bought
-- See other people who are wearing the same clothes as you
-- Have a feed of other people’s Dripps
+- Add library that host can preselect question bank from
+- Add user auth for users to save their question bank to
+
 
 
 ## Milestones 🗿
@@ -23,20 +24,23 @@
 | 1 | Assign frontend, backend, and fullstack |
 | 2 | Make sure that everyone has their development environment set up, teach everyone Git |
 | 3 | Decide color palette and fonts; find general aesthetic; Begin Figma wireframing |
-| 4 - 7 | Implement frontend in Flutter, Work on Firebase backend |
+| 4 - 6 | Implement website frontend in Svelte, Work on backend |
+| 6 - 8 | Implement mobile frontend in Svelte, Work on backend  |
 | 8 - 10 | Presentation development and practice |
-| 11 | Inevitable Victory|
+| FINAL | Inevitable Victory|
 
 
 ## Tech Stack 🧱
-- *Front End*: [Flutter](https://docs.flutter.dev/get-started/install?gclid=CjwKCAiArY2fBhB9EiwAWqHK6oW__BekBV_XSP4G--yGBmP4DcX1WL2eH1e_uVbpLLZMPHSFWPv88BoCAB8QAvD_BwE&gclsrc=aw.ds) & [Figma](https://www.figma.com/)
-- *Back End*: Dart & [Firebase](https://console.firebase.google.com/u/0/)
-- *IDE*: (Not really part of Tech Stack lol) [VSCode](https://code.visualstudio.com/) or [Android Studio](https://developer.android.com/studio?gclid=CjwKCAiArY2fBhB9EiwAWqHK6mBg1pAOTNCuntyNVycX14p5voNqsmKJSdMU_mZ_ZPFnUb2PQM-jAxoCo58QAvD_BwE&gclsrc=aw.ds)
+- *Front End*: [Svelte](https://svelte.dev/) & [Figma](https://www.figma.com/)
+- *Back End*: [MongoDB](https://www.mongodb.com/cloud/atlas/lp/try6?utm_source=google&utm_campaign=gs_americas_united_states_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624338&adgroup=115749704103&gclid=CjwKCAjw3K2XBhAzEiwAmmgrAg4uHgf3ulDv18XD1PKR5n8O8sIyh6xomD9gyrEACvHhPCYyl1ds1BoCYagQAvD_BwE), [ExpressJS](https://expressjs.com/), & [Socket.IO](https://socket.io/)
+- *IDE*: (Not really part of Tech Stack lol) [VSCode](https://code.visualstudio.com/)
 
 
 ## Tutorials 👶
-- [Flutter](https://www.youtube.com/watch?v=0SRvmcsRu2w)
-- [Firebase](https://www.youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC)
+- [Svelte](https://learn.svelte.dev/tutorial/welcome-to-svelte)
+- [MongoDB](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA)
+- [ExpressJS](https://www.youtube.com/watch?v=SccSCuHhOw0)
+- [SocketIO](https://socket.io/get-started/chat)
 - [Git](https://www.youtube.com/watch?v=HkdAHXoRtos)
 - lol just watch a lot of [Fireship](https://www.youtube.com/@Fireship)
 
@@ -58,7 +62,7 @@
 
 ## GitHub Cheat Sheet 🔄
  
- [Master Github Cheat Sheet](https://www.atlassian.com/dam/jcr:8132028b-024f-4b6b-953e-e68fcce0c5fa/atlassian-git-cheatsheet.pdf)
+ [Github Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
  
 | Command | Description |
 | ------ | ------ |
