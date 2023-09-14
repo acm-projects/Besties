@@ -57,7 +57,7 @@
 
 <b><i> Muaaz Abed </i></b> - PM
 
-<b><i> TBA </i></b> - Industry Mentor
+<b><i> John Perry </i></b> - Industry Mentor
 
 
 ## GitHub Cheat Sheet 🔄
