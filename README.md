@@ -55,7 +55,7 @@
 <b><i> Xander Pham-Rojas </i></b> - Back-end Lead
 
 
-<b><i> Muaaz Abed </i></b> - PM
+<b><i> Muaaz Abed </i></b> - PM 
 
 <b><i> Jon Perry </i></b> - Industry Mentor
 
