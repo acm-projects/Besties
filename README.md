@@ -32,13 +32,13 @@
 
 ## Tech Stack 🧱
 - *Front End*: [Svelte](https://svelte.dev/) & [Figma](https://www.figma.com/)
-- *Back End*: [Firebase](https://www.mongodb.com/cloud/atlas/lp/try6?utm_source=google&utm_campaign=gs_americas_united_states_search_core_brand_atlas_desktop&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624338&adgroup=115749704103&gclid=CjwKCAjw3K2XBhAzEiwAmmgrAg4uHgf3ulDv18XD1PKR5n8O8sIyh6xomD9gyrEACvHhPCYyl1ds1BoCYagQAvD_BwE), [ExpressJS](https://expressjs.com/), & [Socket.IO](https://socket.io/)
+- *Back End*: [Firebase](https://firebase.google.com/), [ExpressJS](https://expressjs.com/), & [Socket.IO](https://socket.io/)
 - *IDE*: (Not really part of Tech Stack lol) [VSCode](https://code.visualstudio.com/)
 
 
 ## Tutorials 👶
 - [Svelte](https://learn.svelte.dev/tutorial/welcome-to-svelte)
-- [Firebase](https://www.youtube.com/playlist?list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA)
+- [Firebase](https://www.youtube.com/watch?v=nqyDx2fQ168)
 - [ExpressJS](https://www.youtube.com/watch?v=SccSCuHhOw0)
 - [SocketIO](https://socket.io/get-started/chat)
 - [Git](https://www.youtube.com/watch?v=HkdAHXoRtos)
