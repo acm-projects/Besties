@@ -1,22 +1,26 @@
 <script>
 	import { scaleLinear } from 'd3-scale';
-
+	
 	const teams = [
 		{ name: "Team 1", points: 237 , color: "red"},
 		{ name: "Team 2", points: 187 , color: "pink"},
 		{ name: "Team 3", points: 176 , color: "purple"},
 		{ name: "Team 4", points: 154 , color: "cyan"},
 		{ name: "Team 5", points: 130 , color: "teal"},
-		{ name: "Team 6", points: 120 , color: "hotpink"}
+		{ name: "Team 6", points: 120 , color: "hotpink"},
+		{ name: "Team 7", points: 120 , color: "green"}
 	];
 
-	const xTicks = ["Team 1", "Team 2", "Team 3", "Team 4", "Team 5", "Team 6"];
+	const xTicks = ["Team 1", "Team 2", "Team 3", "Team 4", "Team 5", "Team 6", "Team 7"];
 	const yTicks = [50, 100, 150, 200, 250];
 	const padding = { top: 20, right: 15, bottom: 20, left: 25 };
 
 	let width = 500;
 	let height = 200;
 
+	/**
+     * @param {string} tick
+     */
 	function formatMobile(tick) {
 		return "'" + tick.toString().slice(-2);
 	}
@@ -32,6 +36,7 @@
 	$: innerWidth = width - (padding.left + padding.right);
 	$: barWidth = innerWidth / xTicks.length;
 </script>
+
 <div class="header">
     <h1>Besties Leaderboard</h1>
     <h2>Keep answering questions to win your team points!</h2>
@@ -73,24 +78,43 @@
 </div>
 
 <style>
+	* {
+    	margin:0;
+	}
+
 	h2 {
 		text-align: center;
+        font-size:  25px;
+        color: purple;
 	}
 
     h1 {
         text-align: center;
+        font-size:  50px;
+        color: purple;
     }
 
 	.chart {
 		width: 100%;
-		max-width: 500px;
+		height: 50%;
 		margin: 0 auto;
+		background-color:#d12eb2;
+		border-radius: 10px;
+	}
+
+    .header {
+		background-color:	pink;
+        position: center;
+		width:	100%;
+        height: 200px;
+		margin: 0;
+		border-radius: 25px;
 	}
 
 	svg {
 		position: relative;
 		width: 100%;
-		height: 200px;
+		height: 500px;
 	}
 
 	.tick {
@@ -100,12 +124,12 @@
 	}
 
 	.tick line {
-		stroke: #e2e2e2;
+		stroke: black;
 		stroke-dasharray: 2;
 	}
 
 	.tick text {
-		fill: #ccc;
+		fill: black;
 		text-anchor: start;
 	}
 

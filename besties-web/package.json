@@ -19,6 +19,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"d3-scale": "^4.0.2"
+		"d3-scale": "^4.0.2",
+		"firebase": "^10.5.0"
 	}
 }
