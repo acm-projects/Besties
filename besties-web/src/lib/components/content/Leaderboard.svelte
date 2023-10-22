@@ -1,3 +1,5 @@
+import { onMount } from "svelte";
+
 <script>
     import Filetable from "./filetable.svelte";
     import UploadRow from "./uploadRow.svelte";
