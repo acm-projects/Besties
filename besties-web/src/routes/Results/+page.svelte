@@ -67,7 +67,7 @@
 
     team1{
       display:flex;
-      positon:relative;
+      position:relative;
       margin-left:47%;
       margin-top:-370px; /* */
     }
@@ -91,7 +91,7 @@
     
     team2{
       display:flex;
-      positon:relative;
+      position:relative;
       margin-left:20%;
       margin-top:220px; /* */
     }
@@ -115,7 +115,7 @@
 
     team3{
       display:flex;
-      positon:relative;
+      position:relative;
       margin-left:75%;
       margin-top:-15%; /* */
     }
