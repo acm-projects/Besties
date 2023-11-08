@@ -16,8 +16,12 @@
 
     
     <!-- <a href="/">Home</a> -->
+    
+    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Access Powerups</button>
     <qCard>
+        <div class="radial-progress text-primary bg-white" style="--value:70;">8</div>
         <div class="card bg-base-100 shadow-xl">
+            
             <div class="card-body">
                 <p>12/30</p>
                 <h2 class="card-title text-center">{questions[0].question}</h2>        
