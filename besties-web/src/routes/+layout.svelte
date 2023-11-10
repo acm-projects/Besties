@@ -24,11 +24,13 @@
 		top: 0;
 		right: 0;
 		bottom: 0;
-		left: 0;
+		left: 0; 
 		display: grid;
 		place-items: center;
 		background-color: pink;
 		z-index: 9999;
 	}
+
+	
 </style>
 
