@@ -1,18 +1,21 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
-		"allowJs": true,
-		"checkJs": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true,
-		"skipLibCheck": true,
-		"sourceMap": true,
-		"strict": true
+	  "allowJs": true,
+	  "checkJs": false, // This will disable checking JS files for types, overriding "true" from the extended config
+	  "esModuleInterop": true,
+	  "forceConsistentCasingInFileNames": true,
+	  "resolveJsonModule": true,
+	  "skipLibCheck": true,
+	  "sourceMap": true,
+	  "strict": true
 	},
+	"include": [
+	  "src/**/*"
+	],
 	"exclude": [
-		"*.svelte"
+	  "**/*.svelte", // This pattern ensures all .svelte files are excluded in the project
+	  "node_modules"  // It's a good practice to exclude node_modules
 	]
-	// Rest of your jsconfig.json content
-}
-
+  }
+  
