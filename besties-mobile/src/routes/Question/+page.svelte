@@ -178,7 +178,7 @@
     </powerupButton>
 
     <!-- Next Button -->
-    <button class="next-button font-bold" >
+    <button class="next-button font-bold">
         <span> NEXT </span>
     </button>
 
@@ -211,11 +211,6 @@
         </div>
     </div> -->
 
-    
-    
-    
-
-
 </body>
 
 <style>
@@ -226,7 +221,7 @@
 
     qCard{
         position:absolute;
-        margin-top:45%;
+        margin-top:35%;
         margin-left: 5%;
         margin-right: 10%;
         width:90%;
@@ -234,7 +229,7 @@
 
     answers{
         position:absolute;
-        margin-top:95%;
+        margin-top:84%;
         margin-left: 5%;
         align-items: center;
     }
@@ -249,14 +244,14 @@
 
     timer{
         margin-left: 43%;
-        margin-top: 38%;
+        margin-top: 28%;
         /* align-self: center; */
         position: absolute;
     }
 
     powerupButton{
         margin-left: 30%;
-        margin-top: 10px;
+        margin-top: 30px;
         position:absolute;
     }
 
@@ -297,7 +292,7 @@
         background: #FFCFDE;
         box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
         margin-bottom: 10px;
-        margin-top:770px;
+        margin-top:720px;
         position:absolute;
     }
 
@@ -320,7 +315,7 @@
     }
 
     topHeader{
-        height:60px;
+        height:50px;
         padding-top: 17px;
         padding-left: 30px;
         /* padding-bottom: 15px;  */
