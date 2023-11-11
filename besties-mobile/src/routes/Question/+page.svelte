@@ -10,6 +10,18 @@
         }
 	];
 
+    const teams = [
+		"Besties",
+        "Wasted",
+        "Michelin Archives"
+	];
+    
+    let points = 0;
+
+    function updatePoints() {
+		// console.log("makeFalse()");
+		points++;
+	}
     
 </script>
 
@@ -20,12 +32,26 @@
     <!-- <a href="/">Home</a> -->
     
     <!-- <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Access Powerups</button> -->
-    <qCard>
-        
-        <timer>
-            <div class="radial-progress text-primary bg-white" style="--value:70;">8</div>
-        </timer>
+    
+    <!-- <aCard class="card bg-base-300 w-screen">
+        <div class="card-body">
+            <p class="text-center">{questions[0].answers[0]}</p>        
+        </div>
+    </aCard> -->
 
+    <!-- place-content-center -->
+
+    <topHeader class="grid w-screen rounded-b-2xl bg-info space-y-1">
+        <span>
+            <h1 class="text-secondary text-m font-bold">Team {teams[0]}</h1>
+        
+            <h1 class="text-secondary text-m font-bold">{points} points</h1>
+        </span>
+
+    </topHeader>
+
+    <!-- Question Card -->
+    <qCard>
         <div class="card bg-base-100 shadow-xl">
             
             <div class="card-body">
@@ -35,42 +61,56 @@
         </div>
     </qCard>
 
-    <answers class="flex flex-col space-y-4 ...">
+    <!-- Radial Timer Countdown -->
+    <timer>
+            <div class="radial-progress text-primary bg-white" style="--value:80; --size:4rem;">8</div>
+    </timer>
+
+    <!-- <p class="text-center">{questions[0].answers[3]}</p> -->
+
+    <!-- Answer Cards -->
+    <answers class="flex flex-col space-y-5 ...">
+        <button class="answer-button">
+            <span> {questions[0].answers[0]} </span>
+        </button>
+        <button class="answer-button">
+            <span> {questions[0].answers[1]} </span>
+        </button>
+        <button class="answer-button">
+            <span> {questions[0].answers[2]} </span>
+        </button>
+        <button class="answer-button">
+            <span> {questions[0].answers[3]} </span>
+        </button>
+    </answers>
+    <!-- <answers class="flex flex-col space-y-4 ...">
         <aCard class="card bg-base-300">
-            <!-- <p class="text-center">{questions[0].answers[3]}</p> -->
             <div class="card-body">
                 <p class="text-center">{questions[0].answers[0]}</p>        
             </div>
         </aCard>
         <aCard class="card bg-base-300">
-            <!-- <p class="text-center">{questions[0].answers[3]}</p> -->
             <div class="card-body">
                 <p class="text-center">{questions[0].answers[1]}</p>        
             </div>
         </aCard>
         <aCard class="card bg-base-300">
-            <!-- <p class="text-center">{questions[0].answers[3]}</p> -->
             <div class="card-body">
                 <p class="text-center">{questions[0].answers[2]}</p>        
             </div>
         </aCard>
         <aCard class="card bg-base-300">
-            <!-- <p class="text-center">{questions[0].answers[3]}</p> -->
             <div class="card-body">
                 <p class="text-center">{questions[0].answers[3]}</p>        
             </div>
         </aCard>
         
-    </answers>
+    </answers> -->
 
 
-    <div>
+    <!-- Powerup Stuff -->
         
-    </div>
-    
-    
-       
-        <!-- Open the modal using ID.showModal() method -->
+    <!-- Open the modal using ID.showModal() method -->
     <powerupButton>
         <button class="btn" onclick="my_modal_2.showModal()">Access Powerups</button>
         <dialog id="my_modal_2" class="modal">
@@ -136,10 +176,16 @@
         </form>
         </dialog>   
     </powerupButton>
-    
+
+    <!-- Next Button -->
     <button class="next-button font-bold" >
         <span> NEXT </span>
     </button>
+
+    
+
+    
+
 
         
         
@@ -180,35 +226,38 @@
 
     qCard{
         position:absolute;
-        margin-top:20%;
-        margin-left: 10%;
+        margin-top:45%;
+        margin-left: 5%;
         margin-right: 10%;
+        width:90%;
     }
 
     answers{
-        position:fixed;
-        margin-top:90%;
+        position:absolute;
+        margin-top:95%;
+        margin-left: 5%;
+        align-items: center;
     }
 
     aCard{
         /* margin-top:100%;*/
-        margin-left: 15%;
+        /* margin-left: 15%; */
         /* margin-right: 10%; */
         box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); 
-        /* padding: 10%; */
-        width: 120%; 
+        padding: -20%;
     }
 
     timer{
-        margin-left: 40%;
-        margin-top: 15%;
+        margin-left: 43%;
+        margin-top: 38%;
         /* align-self: center; */
+        position: absolute;
     }
 
     powerupButton{
         margin-left: 30%;
         margin-top: 10px;
-        position:fixed;
+        position:absolute;
     }
 
     select{
@@ -238,18 +287,50 @@
         border: none;
         color: black;
         width: 230px;
-        height: 45px; 
+        height: 50px; 
         text-align: center;
         display: inline-block;
         font-size: 16px;
         margin-left: 80px;
         cursor: pointer;
-        border-radius: 10px;
+        border-radius: 15px;
         background: #FFCFDE;
         box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
         margin-bottom: 10px;
         margin-top:770px;
-        position:fixed;
+        position:absolute;
     }
+
+    .answer-button{
+        border: none;
+        color: black;
+        width: 350px;
+        height: 75px; 
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+        background: #FFCFDE;
+        box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
+        /* margin-left: 80px;
+        margin-bottom: 10px;
+        margin-top:800px;
+        position:absolute; */
+    }
+
+    topHeader{
+        height:60px;
+        padding-top: 17px;
+        padding-left: 30px;
+        /* padding-bottom: 15px;  */
+    }
+
+    .topHeader-points{
+        /* padding-top: -40px; */
+        padding-left: 250px;
+        /* position:fixed; */
+    }
+
 
 </style>
