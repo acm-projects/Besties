@@ -43,7 +43,7 @@
 
     <topHeader class="grid w-screen rounded-b-2xl bg-info space-y-1">
         <span>
-            <h1 class="text-secondary text-m font-bold">Team {teams[0]}</h1>
+            <h1 class="text-secondary text-m font-bold">Team {teams[0]}        {points} points</h1>
         
             <h1 class="text-secondary text-m font-bold">{points} points</h1>
         </span>
