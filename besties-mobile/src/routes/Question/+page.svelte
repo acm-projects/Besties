@@ -42,10 +42,9 @@
     <!-- place-content-center -->
 
     <topHeader class="grid w-screen rounded-b-2xl bg-info space-y-1">
-        <span>
-            <h1 class="text-secondary text-m font-bold">Team {teams[0]}        {points} points</h1>
-        
-            <h1 class="text-secondary text-m font-bold">{points} points</h1>
+        <span class="flex">
+            <h1 class="text-secondary text-m font-bold">Team {teams[0]}</h1>
+            <h1 class="text-secondary text-m font-bold topHeader-points">{points} points</h1>
         </span>
 
     </topHeader>
@@ -117,10 +116,11 @@
         <div class="modal-box">
             <h3 class="font-bold text-2xl text-center">Powerups</h3>
             <br />
-            <button class="team-button">
+            <div class="powerUp-choices">
+                <button class="team-button">
                 <span>
                     <h3 class="font-bold text-lg text-left ">Feature 1</h3>
-                    <p class="py-4 text-left">This is a detailed and fun description of the powerup yayyy</p> 
+                    <p class="py-2 text-left">This is a detailed and fun description of the powerup yayyy</p> 
                 </span>
                 <span>
                     <select class="select select-bordered w-25 max-w-xs">
@@ -134,7 +134,7 @@
             <button class="team-button">
                 <span>
                     <h3 class="font-bold text-lg text-left ">Feature 2</h3>
-                    <p class="py-4 text-left">This is a detailed and fun description of the powerup yayyy</p> 
+                    <p class="py-2 text-left">This is a detailed and fun description of the powerup yayyy</p> 
                 </span>
                 <span>
                     <select class="select select-bordered w-25 max-w-xs">
@@ -147,7 +147,7 @@
             <button class="team-button">
                 <span>
                     <h3 class="font-bold text-lg text-left ">Feature 3</h3>
-                    <p class="py-4 text-left">This is a detailed and fun description of the powerup yayyy</p> 
+                    <p class="py-2 text-left">This is a detailed and fun description of the powerup yayyy</p> 
                 </span>
                 <span>
                     <select class="select select-bordered w-25 max-w-xs">
@@ -160,7 +160,7 @@
             <button class="team-button">
                 <span>
                     <h3 class="font-bold text-lg text-left ">Feature 4</h3>
-                    <p class="py-4 text-left">This is a detailed and fun description of the powerup yayyy</p> 
+                    <p class="py-2 text-left">This is a detailed and fun description of the powerup yayyy</p> 
                 </span>
                 <span>
                     <select class="select select-bordered w-25 max-w-xs">
@@ -170,6 +170,8 @@
                     </select>
                 </span>
             </button>
+            </div>
+            
         </div>
         <form method="dialog" class="modal-backdrop">
             <button>close</button>
@@ -214,6 +216,11 @@
 </body>
 
 <style>
+    .flex {
+        display: flex;
+        /* Optional: Adjust other flex properties if needed */
+    }
+
     body{
         background-color: #7A1E71;
         font-family: 'Open Sans', sans;
@@ -230,7 +237,7 @@
     answers{
         position:absolute;
         margin-top:84%;
-        margin-left: 5%;
+        margin-left:8%;
         align-items: center;
     }
 
@@ -253,19 +260,20 @@
         margin-left: 30%;
         margin-top: 30px;
         position:absolute;
+        align-content: center;
     }
 
     select{
-        margin-left: 160px;
-        margin-top:-50px;
-        position: relative
+        margin-left: 25px;
+        margin-top:-30px;
+        position: absolute;
     }
 
     .team-button{
         border: none;
         color: black;
         width: 300px;
-        height: 120px; 
+        height: 140px; 
         text-align: center;
         display: inline-block;
         font-size: 16px;
@@ -286,13 +294,13 @@
         text-align: center;
         display: inline-block;
         font-size: 16px;
-        margin-left: 80px;
+        margin-left: 22%;
         cursor: pointer;
         border-radius: 15px;
         background: #FFCFDE;
         box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
         margin-bottom: 10px;
-        margin-top:720px;
+        margin-top:760px;
         position:absolute;
     }
 
@@ -316,15 +324,19 @@
 
     topHeader{
         height:50px;
-        padding-top: 17px;
+        padding-top: 12px;
         padding-left: 30px;
         /* padding-bottom: 15px;  */
     }
 
     .topHeader-points{
         /* padding-top: -40px; */
-        padding-left: 250px;
+        padding-left: 180px;
         /* position:fixed; */
+    }
+
+    .powerUp-choices{
+        margin-left: 2%;
     }
 
 
