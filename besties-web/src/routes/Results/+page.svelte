@@ -17,7 +17,7 @@
 
 <body class="h-screen w-screen bg-gradient-to-br from-rose-400 via-pink-400 to-fuchsia-400 ...">
         <topHeader class="grid w-screen rounded-b-2xl bg-info place-content-center space-y-1">
-            <h1 class="text-secondary text-6xl font-bold">Besties Scoreboard</h1>
+            <h1 class="text-accent text-6xl font-bold">Besties Scoreboard</h1>
         </topHeader>
 
     <button on:click={handleClick}>
@@ -28,18 +28,18 @@
     
     {#if visible2}
         <div>
-            <team2 transition:fly={{ delay: 1750, y: 200, duration: 1000 }}>
+            <team2 transition:fly={{ delay: 750, y: 200, duration: 1000 }}>
                 <t2 class="text-2xl">Team 2</t2>
                 <bar2></bar2>
             </team2>
-            <team1 transition:fly={{ delay: 2750, y: 200, duration: 1000 }}>
+            <team1 transition:fly={{ delay: 1750, y: 200, duration: 1000 }}>
                 <t1 class="text-2xl">Team 1</t1>
                 <bar></bar>
             </team1>
-            <team3 transition:fly={{ delay: 750, y: 200, duration: 1000 }}>
+            <!-- <team3 transition:fly={{ delay: 750, y: 200, duration: 1000 }}>
                 <t3 class="text-2xl">Team 3</t3>
                 <bar3></bar3>
-            </team3>
+            </team3> -->
         </div>
         <div transition:fade={{ delay: 250, duration: 300 }}>
             <topStage></topStage>
@@ -68,31 +68,35 @@
     team1{
       display:flex;
       position:relative;
-      margin-left:47%;
+      /* align-content: right; */
+      margin-left:35%;
       margin-top:-370px; /* */
     }
 
     t1{
         position:relative;
         margin-top:-50px;
+        /* align-content: right; */
+        /* text-align: right; */
+        /* margin-left: 20px; */
         color: #fcdeed;
     }
 
     bar{
         position:relative;
         border-radius: 0.75rem;
-        border-top: 390px solid #eccbdb;   /* */
+        border-top: 390px solid #6a5acd;   /* */
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
-        margin-left: -100px;
-        width: 125px;
+        margin-left: -140px;
+        width: 195px;
     }
     
     
     team2{
       display:flex;
       position:relative;
-      margin-left:20%;
+      margin-left:60%;
       margin-top:220px; /* */
     }
 
@@ -105,11 +109,11 @@
     bar2{
         position:relative;
         border-radius: 0.75rem;
-        border-top: 240px solid #eccbdb;   /* */
+        border-top: 240px solid #008080;   /* */
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
-        margin-left: -100px;
-        width: 125px;
+        margin-left: -140px;
+        width: 195px;
     }
 
 
@@ -146,19 +150,19 @@
         position:absolute;
         bottom:0;
         border-radius: 0.75rem;
-        width: 87%;
+        width: 60%;
         height:50px;
         margin-top: 40px;
         margin-bottom: 50px;
-        margin-left: 95px;
+        margin-left: 285px;
         background: #8D368D;
     }
     topStage{
         position:absolute;
         bottom:0;
-        width: 83%;
+        width: 55%;
         height:60px;
-        margin-left: 120px;
+        margin-left: 320px;
         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
         background: #752575;
     }
