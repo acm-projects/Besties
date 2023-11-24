@@ -54,7 +54,12 @@
         <div class="card bg-base-100 shadow-xl">
             
             <div class="card-body">
-                <p>12/30</p>
+                <!-- <p>12/30</p> -->
+                <span class="flex">
+                    <p>12/30</p>
+                    <p class="numPoints font-bold">5 points</p>
+                    
+                </span>
                 <h2 class="card-title text-center">{questions[0].question}</h2>        
             </div>
         </div>
@@ -118,58 +123,70 @@
             <br />
             <div class="powerUp-choices">
                 <button class="team-button">
-                <span>
-                    <h3 class="font-bold text-lg text-left ">Feature 1</h3>
-                    <p class="py-2 text-left">This is a detailed and fun description of the powerup yayyy</p> 
-                </span>
-                <span>
-                    <select class="select select-bordered w-25 max-w-xs">
-                        <option disabled selected>Teams</option>
-                        <option>Han Solo</option>
-                        <option>Greedo</option>
-                    </select>
-                </span>
+                    <span>
+                        <span class="flex">
+                            <h3 class="font-bold text-lg text-left ">Girlypop Flashbang</h3>
+                            <h3 class="font-bold text-lg text-left powerOne">10 points</h3>
+                        </span>
+                        <p class="py-2 text-left">Freeze another team's screens for 30 seconds! 😈</p> 
+                    </span>
+                    <span>
+                        <select class="select select-bordered w-25 max-w-xs">
+                            <option disabled selected>Teams</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select>
+                    </span>
                 
-            </button>
-            <button class="team-button">
-                <span>
-                    <h3 class="font-bold text-lg text-left ">Feature 2</h3>
-                    <p class="py-2 text-left">This is a detailed and fun description of the powerup yayyy</p> 
-                </span>
-                <span>
-                    <select class="select select-bordered w-25 max-w-xs">
-                        <option disabled selected>Teams</option>
-                        <option>Han Solo</option>
-                        <option>Greedo</option>
-                    </select>
-                </span>
-            </button>
-            <button class="team-button">
-                <span>
-                    <h3 class="font-bold text-lg text-left ">Feature 3</h3>
-                    <p class="py-2 text-left">This is a detailed and fun description of the powerup yayyy</p> 
-                </span>
-                <span>
-                    <select class="select select-bordered w-25 max-w-xs">
-                        <option disabled selected>Teams</option>
-                        <option>Han Solo</option>
-                        <option>Greedo</option>
-                    </select>
-                </span>
-            </button>
-            <button class="team-button">
-                <span>
-                    <h3 class="font-bold text-lg text-left ">Feature 4</h3>
-                    <p class="py-2 text-left">This is a detailed and fun description of the powerup yayyy</p> 
-                </span>
-                <span>
-                    <select class="select select-bordered w-25 max-w-xs">
-                        <option disabled selected>Teams</option>
-                        <option>Han Solo</option>
-                        <option>Greedo</option>
-                    </select>
-                </span>
-            </button>
+                </button>
+                <button class="team-button">
+                    <span>
+                        <span class="flex">
+                            <h3 class="font-bold text-lg text-left ">Gatekeep the Guess</h3>
+                            <h3 class="font-bold text-lg text-left powerOne">10 points</h3>
+                        </span>
+                        <p class="py-2 text-left">Hide the correct answer choice from another team! 🙅‍♀️</p> 
+                    </span>
+                    <span>
+                        <select class="select select-bordered w-25 max-w-xs">
+                            <option disabled selected>Teams</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select>
+                    </span>
+                </button>
+                <button class="team-button">
+                    <span>
+                        <span class="flex">
+                            <h3 class="font-bold text-lg text-left ">Gaslight</h3>
+                            <h3 class="font-bold text-lg text-left powerTwo">10 points</h3>
+                        </span>
+                        <p class="py-2 text-left">Confuse another team into picking the wrong answer 👀</p> 
+                    </span>
+                    <span>
+                        <select class="select select-bordered w-25 max-w-xs">
+                            <option disabled selected>Teams</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select>
+                    </span>
+                </button>
+                <button class="team-button">
+                    <span>
+                        <span class="flex">
+                            <h3 class="font-bold text-lg text-left ">Girlboss</h3>
+                            <h3 class="font-bold text-lg text-left powerTwo">20 points</h3>
+                        </span>
+                        <p class="py-2 text-left">Earn double points for the next 30 seconds! 😇</p> 
+                    </span>
+                    <span>
+                        <select class="select select-bordered w-25 max-w-xs">
+                            <option disabled selected>Teams</option>
+                            <option>Han Solo</option>
+                            <option>Greedo</option>
+                        </select>
+                    </span>
+                </button>
             </div>
             
         </div>
@@ -272,17 +289,19 @@
     .team-button{
         border: none;
         color: black;
-        width: 300px;
+        width: 320px;
         height: 140px; 
         text-align: center;
         display: inline-block;
         font-size: 16px;
-        margin-left: 8px;
+        margin-left: -2px;
         cursor: pointer;
         border-radius: 10px;
         background: #FFCFDE;
         box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
-        padding:10px;
+        padding: 10px;
+        padding-left: 15px;
+        /* padding-top: 0px; */
         margin-bottom: 20px;
     }
 
@@ -337,6 +356,26 @@
 
     .powerUp-choices{
         margin-left: 2%;
+        /* padding-top: 10%; */
+    }
+
+    .powerOne{
+        /* padding-top: -40px; */
+        padding-left: 30px;
+        /* position:fixed; */
+        color:#7A1E71;
+    }
+
+    .powerTwo{
+        /* padding-top: -40px; */
+        padding-left: 132px;
+        /* position:fixed; */
+        color:#7A1E71;
+    }
+
+    .numPoints{
+        padding-left: 192px;
+        color:#96003A;
     }
 
 
