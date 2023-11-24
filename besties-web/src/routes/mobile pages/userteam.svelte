@@ -1,7 +1,7 @@
 <script lang="ts">
     // TypeScript script content
     // Define your types and interfaces here
-    type TeamMember {
+    type TeamMember  = {
       name: string;
       top: string;
     }
