@@ -7,10 +7,10 @@
     }
   
     const teamMembers: TeamMember[] = [
-      { name: 'Petals', top: '45%' },
-      { name: 'Sisi', top: '56%' },
-      { name: 'Xander', top: '67%' },
-      { name: 'Varshni', top: '78%' },
+      { name: 'Petals', top: '40%' },
+      { name: 'Sisi', top: '51%' },
+      { name: 'Xander', top: '62%' },
+      { name: 'Varshni', top: '73%' },
     ];
 </script>
 
@@ -56,7 +56,7 @@
     .description {
       position: absolute;
       width: 83%; /* Adjusted for padding */
-      top: 20%;
+      top: 18%;
       left: 8%;
       /* font-family: 'Average Sans', sans-serif; */
       /* font-weight: 400; */
@@ -77,12 +77,14 @@
       border-radius: 10px;
       /* font-family: 'RocknRoll One', sans-serif; */
       /* font-weight: 350; */
-      font-size: 30px;
+      font-size: 25px;
       line-height: 43px;
       text-align: center;
       color: black;
       margin-bottom: 20px; /* Added margin for spacing */
-      padding: 10px; /* Added padding for content */
+      padding: 6px; /* Added padding for content */
+      border-width: 5px;
+      border-color: #DF86E4;
     }
   
     .rest-of-team {
@@ -91,12 +93,21 @@
       top: 14%;
       left: 8%;
       /* font-family: 'Average Sans', sans-serif; */
-      font-weight: 400;
-      font-size: 25px;
+      /* font-weight: 400; */
+      /* font-size: 30px; */
       line-height: 32px;
       text-align: center;
       color: #FFF1F5;
       margin: 0 auto; /* Center in the available space */
+    }
+
+    .pButton{
+        background: linear-gradient(90deg, #FFCDE8 20%, #DF86E4 100%);
+        margin-left: 11%;
+        margin-top: 790px;
+        position:absolute;
+        width: 322px;
+        height: 66px;
     }
 </style>
 
@@ -105,11 +116,9 @@
     <div class="container">
     <!-- <div class="title">Team 1</div> -->
     <h3 class="text-secondary font-bold text-4xl text-center title">Team 1</h3>
-    <a href="/Question">
-        <h3 class="py-3 text-2xl text-center description"> All of you guys answered mostly ‘B’ in the pre-game. So get to know your besties teammates so your team can beat the others in the game!</h3>
-    </a>
+    <h3 class="py-3 text-xl text-center description"> All of you guys answered mostly ‘B’ in the pre-game. So get to know your besties teammates so your team can beat the others in the game!</h3>
     <div class="rectangle"></div>
-    <div class="rest-of-team">
+    <div class="rest-of-team text-xl">
       Here are the rest of your besties!
     </div>
         {#each teamMembers as member (member.name)}
@@ -117,6 +126,9 @@
             {member.name}
         </div>
         {/each}
+        <a href="/Question">
+            <button class="btn pButton font-bold text-2xl">Start Game!</button>
+        </a>
     </div>
 </body>
   
