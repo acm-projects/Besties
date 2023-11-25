@@ -7,10 +7,10 @@
     }
   
     const teamMembers: TeamMember[] = [
-      { name: 'Petals', top: '50%' },
-      { name: 'Sisi', top: '61%' },
-      { name: 'Xander', top: '73%' },
-      { name: 'Varshni', top: '84%' },
+      { name: 'Petals', top: '45%' },
+      { name: 'Sisi', top: '56%' },
+      { name: 'Xander', top: '67%' },
+      { name: 'Varshni', top: '78%' },
     ];
 </script>
 
@@ -29,7 +29,7 @@
       position: relative;
       width: 412px;
       height: 915px;
-      background: linear-gradient(180deg, #E36C8F 0%, #7A1E71 100%);
+      background: linear-gradient(180deg, #E36C8F -50%, #7A1E71 100%);
     }
   
     .title {
@@ -56,7 +56,7 @@
     .description {
       position: absolute;
       width: 83%; /* Adjusted for padding */
-      top: 24%;
+      top: 20%;
       left: 8%;
       /* font-family: 'Average Sans', sans-serif; */
       /* font-weight: 400; */
@@ -105,17 +105,19 @@
     <div class="container">
     <!-- <div class="title">Team 1</div> -->
     <h3 class="text-secondary font-bold text-4xl text-center title">Team 1</h3>
-    <h3 class="py-3 text-2xl text-center description"> All of you guys answered mostly ‘B’ in the pre-game. So get to know your besties teammates so your team can beat the others in the game!</h3>
+    <a href="/Question">
+        <h3 class="py-3 text-2xl text-center description"> All of you guys answered mostly ‘B’ in the pre-game. So get to know your besties teammates so your team can beat the others in the game!</h3>
+    </a>
     <div class="rectangle"></div>
     <div class="rest-of-team">
       Here are the rest of your besties!
     </div>
-    {#each teamMembers as member (member.name)}
-      <div class="team-member" style="top: {member.top};">
-        {member.name}
-      </div>
-    {/each}
-  </div>
+        {#each teamMembers as member (member.name)}
+        <div class="team-member" style="top: {member.top};">
+            {member.name}
+        </div>
+        {/each}
+    </div>
 </body>
   
   
