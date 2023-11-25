@@ -361,7 +361,7 @@
         height: 75px; 
         text-align: center;
         display: inline-block;
-        font-size: 16px;
+        font-size: 20px;
         cursor: pointer;
         border-radius: 10px;
         background: #FFCFDE;
