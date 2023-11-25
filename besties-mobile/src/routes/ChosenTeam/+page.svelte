@@ -103,11 +103,13 @@
 
     .pButton{
         background: linear-gradient(90deg, #FFCDE8 20%, #DF86E4 100%);
-        margin-left: 11%;
+        margin-left: 23%;
         margin-top: 790px;
         position:absolute;
-        width: 322px;
-        height: 66px;
+        width: 230px;
+        height: 50px; 
+        border-radius: 15px;
+        font-size: 16px;
     }
 </style>
 
@@ -116,19 +118,17 @@
     <div class="container">
     <!-- <div class="title">Team 1</div> -->
     <h3 class="text-secondary font-bold text-4xl text-center title">Team 1</h3>
+    <div class="rest-of-team text-xl"> Here are the rest of your besties! </div>
     <h3 class="py-3 text-xl text-center description"> All of you guys answered mostly ‘B’ in the pre-game. So get to know your besties teammates so your team can beat the others in the game!</h3>
     <div class="rectangle"></div>
-    <div class="rest-of-team text-xl">
-      Here are the rest of your besties!
+    {#each teamMembers as member (member.name)}
+    <div class="team-member" style="top: {member.top};">
+        {member.name}
     </div>
-        {#each teamMembers as member (member.name)}
-        <div class="team-member" style="top: {member.top};">
-            {member.name}
-        </div>
-        {/each}
-        <a href="/Question">
-            <button class="btn pButton font-bold text-2xl">Start Game!</button>
-        </a>
+    {/each}
+    <a href="/Question">
+        <button class="btn pButton font-bold">Start Game!</button>
+    </a>
     </div>
 </body>
   
