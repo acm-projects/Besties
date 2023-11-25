@@ -179,7 +179,7 @@
         
     <!-- Open the modal using ID.showModal() method -->
     <powerupButton>
-        <button class="btn" onclick="my_modal_2.showModal()">Access Powerups</button>
+        <button class="btn pButton" onclick="my_modal_2.showModal()">Access Powerups</button>
         <dialog id="my_modal_2" class="modal">
         <div class="modal-box">
             <h3 class="font-bold text-2xl text-center">Powerups</h3>
@@ -307,6 +307,10 @@
         align-content: center;
     }
 
+    .pButton{
+        background: linear-gradient(90deg, #FFCDE8 20%, #DF86E4 100%);
+    }
+
     select{
         margin-left: 25px;
         margin-top:-30px;
@@ -366,16 +370,6 @@
         margin-bottom: 10px;
         margin-top:800px;
         position:absolute; */
-    }
-
-    .answer-buttonY:hover {
-        background-color: #04AA6D;
-        color: white;
-    }
-
-    .answer-buttonN:hover {
-        background-color: #f44336;
-        color: white;
     }
 
     topHeader{
