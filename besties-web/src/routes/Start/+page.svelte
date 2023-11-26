@@ -31,10 +31,11 @@
 
   <style>
     .pre-game-screen {
-      position: relative;
-      width: 1440px;
+      /* position: relative; */
+      /* width: 1440px;
       height: 1024px;
-      background: #DF7A97;
+      background: #DF7A97; */
+      /* font-family: 'Open Sans', sans; */
     }
 
     .header-rectangle {
@@ -51,8 +52,8 @@
       height: 174px;
       left: 222px;
       top: 46px;
-      font-family: 'RocknRoll One', sans-serif;
-      font-weight: 400;
+      /* font-family: 'RocknRoll One', sans-serif; */
+      /* font-weight: 400; */
       font-size: 120px;
       line-height: 174px;
       color: #8B1D3E;
@@ -66,12 +67,13 @@
       height: 58px;
       left: 120px;
       top: 268px;
-      font-family: 'Average Sans', sans-serif;
-      font-weight: 400;
-      font-size: 45px;
-      line-height: 58px;
+      /* font-family: 'Average Sans', sans-serif; */
+      /* font-family: 'Open Sans', sans; */
+      font-weight: 590;
+      font-size: 30px;
+      /* line-height: 58px; */
       text-align: center;
-      color: #8B1D3E;
+      color: #fcdeed;
     }
 
     .question {
@@ -99,27 +101,165 @@
 
     .submit-button {
       position: absolute;
-      left: 50%;
-      bottom: 50px;
+      left: 88%;
+      /* bottom: 90px; */
+      top: 130px;
       transform: translateX(-50%);
       padding: 10px 20px;
       font-size: 24px;
       cursor: pointer;
-      background-color: #8B1D3E;
-      color: white;
+      background-color: #752575;
+      color: #fcdeed;
       border: none;
       border-radius: 5px;
+      height:70px;
     }
+
+    topHeader{
+      height:240px;
+      padding-top: 20px;
+      padding-bottom: 15px;
+      /* padding-right: 30px; */
+    }
+
+    .codeBox{
+      position: relative;
+      border: none;
+      color: #8B1D3E;
+      width: 350px;
+      height: 120px; 
+      text-align: center;
+      display: inline-block;
+      font-size: 60px;
+      cursor: pointer;
+      border-radius: 5px;
+      background: #fcdeed;
+      box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
+      margin-left: 540px;
+    }
+
+    .top-text{
+      margin-left: 450px;
+    }
+
+    .group1{
+      position: absolute;
+      margin-top: 7%;
+      margin-left: 5%;
+    }
+
+    .Q1 {
+      position: relative;
+      width: 86%; /* Adjusted for padding */
+      line-height: 32px;
+      color: #FFF1F5;
+      margin: 0 auto; /* Center in the available space */
+    }
+
+    .group2{
+        position: absolute;
+        margin-top: 19%;
+        margin-left: 5%;
+    }
+
+    .Q2 {
+        position: relative;
+        width: 86%; /* Adjusted for padding */
+        line-height: 32px;
+        color: #FFF1F5;
+        margin: 0 auto; /* Center in the available space */
+    }
+
+    .buttonOne{
+      position: relative;
+      border: none;
+      color: black;
+      width: 260px;
+      height: 120px; 
+      text-align: center;
+      display: inline-block;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 10px;
+      background: #FFCFDE;
+      box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
+    }
+
+    .buttonTwo{
+      position: relative;
+      border: none;
+      color: black;
+      width: 260px;
+      height: 120px; 
+      text-align: center;
+      display: inline-block;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 10px;
+      background: #FFCFDE;
+      box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
+    }
+
+    .buttonThree{
+      position: relative;
+      border: none;
+      color: black;
+      width: 260px;
+      height: 120px;
+      text-align: center;
+      display: inline-block;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 10px;
+      background: #FFCFDE;
+      box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
+    }
+
+    .buttonFour{
+      position: relative;
+      border: none;
+      color: black;
+      width: 260px;
+      height: 120px;
+      text-align: center;
+      display: inline-block;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 10px;
+      background: #FFCFDE;
+      box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
+    }
+
   </style>
 
-  <div class="pre-game-screen">
-    <div class="header-rectangle"></div>
-    <h1 class="pre-game-title">Pre-Game Time!</h1>
-    <p class="description">
-      Answer these questions to determine your besties for the game!
+  <div class="pre-game-screen h-screen w-screen bg-gradient-to-br from-rose-400 via-pink-400 to-fuchsia-400 ...">
+    <topHeader class="grid w-screen rounded-b-2xl bg-info">
+      <h1 class="text-accent top-text text-3xl font-bold">Enter the code below to join the game</h1>
+      <button class="codeBox font-bold">s 1 A y</button>
+      <button class="submit-button" on:click={submitAnswers}>Start Game!</button>
+    </topHeader>
+
+    <div class="group1 space-y-5 space-x-60 px-5">
+      <h3 class="Q1 text-xl"> </h3>
+      <button class="buttonOne">What is your favorite hobby?</button>
+      <button class="buttonTwo" >What is your most used emoji?</button>
+    </div>
+    <div class="group2 space-y-5 space-x-60 px-5">
+      <h3 class="Q1 text-xl"> </h3>
+      <button class="buttonThree">What is your favorite taste?</button>
+      <button class="buttonFour">What is your favorite drink?</button>
+    </div>
+    
+    <!-- <div class="header-rectangle"></div> -->
+    <!-- <h1 class="pre-game-title">Pre-Game Time!</h1> -->
+    <p class="description ">
+      Pre-Game Time! Answer these 4 questions to determine your besties for the game!
+    </p>
+    <p class="description ">
+      Change color black!
     </p>
     <!-- Questions -->
-    <div class="question" style="top: 441px; left: 222px;">
+    <!-- <div class="question" style="top: 441px; left: 222px;">
       <input type="text" placeholder="1: Question?" bind:value={answers.q1} on:input={(event) => handleInputChange('q1', event)} />
     </div>
     <div class="question" style="top: 441px; left: 818px;">
@@ -130,7 +270,7 @@
     </div>
     <div class="question" style="top: 735px; left: 818px;">
       <input type="text" placeholder="4: Question?" bind:value={answers.q4} on:input={(event) => handleInputChange('q4', event)} />
-    </div>
+    </div> -->
 
-    <button class="submit-button" on:click={submitAnswers}>Submit Answers</button>
+    
   </div>
