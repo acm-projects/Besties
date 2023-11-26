@@ -25,32 +25,32 @@
     <div class="rest-of-team text-xl">Answer the questions below</div>
     <h3 class="py-3 text-xl text-center description">You’ll be paired up with others that have similar answers to form your besties team!</h3>
     <div class="group1 space-y-5 space-x-3 px-5">
-        <h3 class="Q1 text-xl"> Question 1</h3>
-        <button class="buttonOne">Answer choice one</button>
-        <button class="buttonTwo" class:selectedColor={questionOne} on:click={questionFunc}>Answer choice two</button>
-        <button class="buttonThree">Answer choice three</button>
-        <button class="buttonFour">Answer choice four</button>
+        <h3 class="Q1 text-xl">What is your favorite hobby?</h3>
+        <button class="buttonOne">Singing</button>
+        <button class="buttonTwo" class:selectedColor={questionOne} on:click={questionFunc}>Drawing</button>
+        <button class="buttonThree">Gaming</button>
+        <button class="buttonFour">Reading</button>
     </div>
     <div class="group2 space-y-5 space-x-3 px-5">
-        <h3 class="Q2 text-xl"> Question 2</h3>
-        <button class="buttonOne">Answer choice one</button>
-        <button class="buttonTwo" class:selectedColor2={questionTwo} on:click={questionFunc2}>Answer choice two</button>
-        <button class="buttonThree">Answer choice three</button>
-        <button class="buttonFour">Answer choice four</button>
+        <h3 class="Q2 text-xl">What is your most used emoji?</h3>
+        <button class="buttonOne">💀</button>
+        <button class="buttonTwo" class:selectedColor2={questionTwo} on:click={questionFunc2}>😭</button>
+        <button class="buttonThree">😂</button>
+        <button class="buttonFour">😈</button>
     </div>
     <div class="group3 space-y-5 space-x-3 px-5">
-        <h3 class="Q3 text-xl"> Question 3</h3>
-        <button class="buttonOne">Answer choice one</button>
-        <button class="buttonTwo">Answer choice two</button>
-        <button class="buttonThree" class:selectedColor3={questionThree} on:click={questionFunc3}>Answer choice three</button>
-        <button class="buttonFour">Answer choice four</button>
+        <h3 class="Q3 text-xl">Which one?</h3>
+        <button class="buttonOne">Salty</button>
+        <button class="buttonTwo">Spicy</button>
+        <button class="buttonThree" class:selectedColor3={questionThree} on:click={questionFunc3}>Sweet</button>
+        <button class="buttonFour">Sour</button>
     </div>
     <div class="group4 space-y-5 space-x-3 px-5">
-        <h3 class="Q4 text-xl"> Question 4</h3>
-        <button class="buttonOne">Answer choice one</button>
-        <button class="buttonTwo" class:selectedColor4={questionFour} on:click={questionFunc4}>Answer choice two</button>
-        <button class="buttonThree">Answer choice three</button>
-        <button class="buttonFour">Answer choice four</button>
+        <h3 class="Q4 text-xl">Favorite drink?</h3>
+        <button class="buttonOne">Coffee</button>
+        <button class="buttonTwo" class:selectedColor4={questionFour} on:click={questionFunc4}>Boba</button>
+        <button class="buttonThree">Tea</button>
+        <button class="buttonFour">Soda</button>
     </div>
     <a href="/ChosenTeam">
         <button class="btn pButton font-bold">Next</button>
@@ -159,7 +159,7 @@
         height: 70px; 
         text-align: center;
         display: inline-block;
-        font-size: 16px;
+        font-size: 18px;
         cursor: pointer;
         border-radius: 10px;
         background: #FFCFDE;
@@ -174,7 +174,7 @@
         height: 70px; 
         text-align: center;
         display: inline-block;
-        font-size: 16px;
+        font-size: 18px;
         cursor: pointer;
         border-radius: 10px;
         background: #FFCFDE;
@@ -189,7 +189,7 @@
         height: 70px; 
         text-align: center;
         display: inline-block;
-        font-size: 16px;
+        font-size: 18px;
         cursor: pointer;
         border-radius: 10px;
         background: #FFCFDE;
@@ -204,7 +204,7 @@
         height: 70px; 
         text-align: center;
         display: inline-block;
-        font-size: 16px;
+        font-size: 18px;
         cursor: pointer;
         border-radius: 10px;
         background: #FFCFDE;
@@ -219,7 +219,7 @@
         width: 230px;
         height: 50px; 
         border-radius: 15px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .selectedColor{
