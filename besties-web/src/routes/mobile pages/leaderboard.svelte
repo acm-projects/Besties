@@ -1,5 +1,4 @@
-<script>
-    import MyComponent from './MyComponent.svelte';
+<script lang="ts">
   </script>
   
   <style>
