@@ -1,4 +1,5 @@
 <script>
+    // Svelte component logic goes here
     let showLeaderboard = false;
   
     function toggleLeaderboard() {
@@ -21,7 +22,7 @@
       position: absolute;
       width: 364px;
       height: 76px;
-      left: 24px;
+      left: 25px;
       top: 631px;
       background: #E36C8F;
       border-radius: 10px;
@@ -311,16 +312,16 @@
       <div class="vector"></div>
     </div>
     <div class="frame6">
-      <div class="ellipse1-frame6"></div>
-      <div class="leadersBoard-frame6">Leaders board</div>
-      <div class="pt500-frame6">500pt</div>
-      <div class="chevronUp-frame6"></div>
-      <div class="vector-frame6"></div>
+      <div class="ellipse1"></div>
+      <div class="leadersBoard">Leaders board</div>
+      <div class="pt500">500pt</div>
+      <div class="chevronUp"></div>
+      <div class="vector"></div>
     </div>
     <div class="rectangle1">
-      <div class="ellipse1-rectangle1"></div>
+      <div class="ellipse1"></div>
       <div class="group1">
-        <div class="vector-group1"></div>
+        <div class="vector"></div>
       </div>
       <div class="ellipse4"></div>
       <div class="ellipse7"></div>
@@ -334,4 +335,5 @@
     </div>
   </div>
 
+  
   
