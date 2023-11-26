@@ -1,5 +1,7 @@
 <script>
     import { tweened } from 'svelte/motion';
+    import { goto } from '$app/navigation';
+
 
     // -- Q&A DATA --
     const questions = [
@@ -47,7 +49,8 @@
     // -- CURRENT QUESTION --
     let qNum = 0;
     function updateQNum(){
-        qNum++;
+        if(qNum < 4){
+            qNum++;
         // console.log("clickednext " + qNum + "  original seconds- " + seconds);
         seconds = 20;
         countdown();
@@ -57,9 +60,12 @@
         selectedColorBool3 = false;
         selectedColorBool4 = false;
         powerupColorBool = false;
+        }
+        else{
+            goto('/Results');
+        }
+        
     }
-
-
 
     // -- TIMER COUNTDOWN --
     let original = 20; // total num of seconds
