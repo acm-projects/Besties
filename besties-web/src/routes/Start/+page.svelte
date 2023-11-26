@@ -1,11 +1,17 @@
 <script>
-    // State to store the answers to each question
-    let answers = {
-      q1: '',
-      q2: '',
-      q3: '',
-      q4: ''
-    };
+
+	let displayInt = 0;
+	function visibleChange2(){
+		displayInt++;
+	}
+    
+  // State to store the answers to each question
+  let answers = {
+    q1: '',
+    q2: '',
+    q3: '',
+    q4: ''
+  };
 
   // Function to handle input changes
   /**
@@ -113,6 +119,7 @@
       border: none;
       border-radius: 5px;
       height:70px;
+      box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
     }
 
     topHeader{
@@ -134,8 +141,32 @@
       cursor: pointer;
       border-radius: 5px;
       background: #fcdeed;
-      box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
+      /* box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25); */
       margin-left: 540px;
+    }
+
+    .playerBox{
+      position: absolute;
+      border: none;
+      color: #8B1D3E;
+      width: 110px;
+      height: 70px; 
+      text-align: center;
+      display: inline-block;
+      font-size: 45px;
+      cursor: pointer;
+      border-radius: 5px;
+      background: #fcdeed;
+      /* box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25); */
+      margin-left: 80px;
+      margin-top: 120px;
+    }
+
+    .player-text{
+      position:absolute;
+      margin-left: 200px;
+      margin-top:140px;
+      color: #8B1D3E;
     }
 
     .top-text{
@@ -145,7 +176,7 @@
     .group1{
       position: absolute;
       margin-top: 7%;
-      margin-left: 5%;
+      margin-left: 4%;
     }
 
     .Q1 {
@@ -159,7 +190,7 @@
     .group2{
         position: absolute;
         margin-top: 19%;
-        margin-left: 5%;
+        margin-left: 4%;
     }
 
     .Q2 {
@@ -174,13 +205,13 @@
       position: relative;
       border: none;
       color: black;
-      width: 260px;
+      width: 270px;
       height: 120px; 
       text-align: center;
       display: inline-block;
       font-size: 18px;
       cursor: pointer;
-      border-radius: 10px;
+      border-radius: 6px;
       background: #FFCFDE;
       box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
     }
@@ -189,13 +220,13 @@
       position: relative;
       border: none;
       color: black;
-      width: 260px;
+      width: 270px;
       height: 120px; 
       text-align: center;
       display: inline-block;
       font-size: 18px;
       cursor: pointer;
-      border-radius: 10px;
+      border-radius: 6px;
       background: #FFCFDE;
       box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
     }
@@ -204,13 +235,13 @@
       position: relative;
       border: none;
       color: black;
-      width: 260px;
+      width: 270px;
       height: 120px;
       text-align: center;
       display: inline-block;
       font-size: 18px;
       cursor: pointer;
-      border-radius: 10px;
+      border-radius: 6px;
       background: #FFCFDE;
       box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
     }
@@ -219,13 +250,13 @@
       position: relative;
       border: none;
       color: black;
-      width: 260px;
+      width: 270px;
       height: 120px;
       text-align: center;
       display: inline-block;
       font-size: 18px;
       cursor: pointer;
-      border-radius: 10px;
+      border-radius: 6px;
       background: #FFCFDE;
       box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
     }
@@ -236,9 +267,12 @@
     <topHeader class="grid w-screen rounded-b-2xl bg-info">
       <h1 class="text-accent top-text text-3xl font-bold">Enter the code below to join the game</h1>
       <button class="codeBox font-bold">s 1 A y</button>
-      <button class="submit-button" on:click={submitAnswers}>Start Game!</button>
+      <a href="/Leaderboard">
+        <button class="submit-button">Start Game!</button>
+      </a>
+      <button class="playerBox font-bold">{displayInt}</button>
+      <button class="text-accent player-text text-3xl font-bold" on:click={visibleChange2}>Players</button>
     </topHeader>
-
     <div class="group1 space-y-5 space-x-60 px-5">
       <h3 class="Q1 text-xl"> </h3>
       <button class="buttonOne">What is your favorite hobby?</button>
@@ -254,9 +288,6 @@
     <!-- <h1 class="pre-game-title">Pre-Game Time!</h1> -->
     <p class="description ">
       Pre-Game Time! Answer these 4 questions to determine your besties for the game!
-    </p>
-    <p class="description ">
-      Change color black!
     </p>
     <!-- Questions -->
     <!-- <div class="question" style="top: 441px; left: 222px;">
