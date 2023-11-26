@@ -39,7 +39,7 @@
 
     // -- TEAM OPTIONS --
     const teams = [
-		"Besties",
+		"Team 1",
         "Wasted",
         "Michelin Archives"
 	];
@@ -48,7 +48,7 @@
     let qNum = 0;
     function updateQNum(){
         qNum++;
-        console.log("clickednext " + qNum + "  original seconds- " + seconds);
+        // console.log("clickednext " + qNum + "  original seconds- " + seconds);
         seconds = 20;
         countdown();
         
@@ -87,19 +87,19 @@
     let selectedColorBool4 = false;
 
     function testFunc(){
-        console.log("button 1 clicked ");
+        // console.log("button 1 clicked ");
         selectedColorBool = true;
     }
     function testFunc2(){
-        console.log("button 2 clicked ");
+        // console.log("button 2 clicked ");
         selectedColorBool2 = true;
     }
     function testFunc3(){
-        console.log("button 3 clicked ");
+        // console.log("button 3 clicked ");
         selectedColorBool3 = true;
     }
     function testFunc4(){
-        console.log("button 4 clicked ");
+        // console.log("button 4 clicked ");
         selectedColorBool4 = true;
     }
 
@@ -127,7 +127,6 @@
         <button onclick="my_modal_3.showModal()">
             <div class="card bg-base-100 shadow-xl">
             <div class="card-body">
-                <!-- <p>12/30</p> -->
                 <span class="flex">
                     <p>{qNum + 1}/5</p>
                     <p class="numPoints font-bold">{questions[qNum].pointsAvailable} points</p>
@@ -138,6 +137,7 @@
         </button>
         
     </qCard>
+
 
     <!-- Radial Timer Countdown -->
     <timer>
