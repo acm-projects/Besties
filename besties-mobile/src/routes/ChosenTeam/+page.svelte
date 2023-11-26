@@ -116,7 +116,6 @@
 
 <body>
     <div class="container">
-    <!-- <div class="title">Team 1</div> -->
     <h3 class="text-secondary font-bold text-4xl text-center title">Team 1</h3>
     <div class="rest-of-team text-xl"> Here are the rest of your besties! </div>
     <h3 class="py-3 text-xl text-center description"> All of you guys answered mostly ‘B’ in the pre-game. So get to know your besties teammates so your team can beat the others in the game!</h3>
