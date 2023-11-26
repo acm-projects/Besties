@@ -1,24 +1,240 @@
-<body class="h-screen w-screen bg-gradient-to-br from-rose-400 via-pink-400 to-fuchsia-400 ...">
-    <h1 class="text-white text-4xl font-bold">Pre-Game Questions</h1>
-    <p>Answer the questions below. You’ll be paired up with others that have similar answers to form your besties team!</p>
-    <img src = "../../static/Vector.svg" alt  = "" />
-    <button onclick="my_modal_3.showModal()">open modal</button>
-    <dialog id="my_modal_3" class="modal">
-    <div class="modal-box">
-        <h3 class="font-bold text-4xl text-center">Oh No!</h3>
-        <h3 class="py-3 font-bold text-4xl text-center">You have been frozen by team Sisi! 😱</h3>
-        <h3 class="py-5 font-bold text-2xl text-center">You won't be able to answer this question!</h3>
+<script>
+    let questionOne = false;
+    function questionFunc(){
+        questionOne = true;
+    }
+
+    let questionTwo = false;
+    function questionFunc2(){
+        questionTwo = true;
+    }
+
+    let questionThree = false;
+    function questionFunc3(){
+        questionThree = true;
+    }
+
+    let questionFour = false;
+    function questionFunc4(){
+        questionFour = true;
+    }
+</script>
+
+<body class="w-screen">
+    <h3 class="text-white font-bold text-4xl text-center title">Pre-Game Time!</h3>
+    <div class="rest-of-team text-xl">Answer the questions below</div>
+    <h3 class="py-3 text-xl text-center description">You’ll be paired up with others that have similar answers to form your besties team!</h3>
+    <div class="group1 space-y-5 space-x-3 px-5">
+        <h3 class="Q1 text-xl"> Question 1</h3>
+        <button class="buttonOne">Answer choice one</button>
+        <button class="buttonTwo" class:selectedColor={questionOne} on:click={questionFunc}>Answer choice two</button>
+        <button class="buttonThree">Answer choice three</button>
+        <button class="buttonFour">Answer choice four</button>
     </div>
-    <form method="dialog" class="modal-backdrop">
-        <button>close</button>
-    </form>
-    </dialog>   
+    <div class="group2 space-y-5 space-x-3 px-5">
+        <h3 class="Q2 text-xl"> Question 2</h3>
+        <button class="buttonOne">Answer choice one</button>
+        <button class="buttonTwo" class:selectedColor2={questionTwo} on:click={questionFunc2}>Answer choice two</button>
+        <button class="buttonThree">Answer choice three</button>
+        <button class="buttonFour">Answer choice four</button>
+    </div>
+    <div class="group3 space-y-5 space-x-3 px-5">
+        <h3 class="Q3 text-xl"> Question 3</h3>
+        <button class="buttonOne">Answer choice one</button>
+        <button class="buttonTwo">Answer choice two</button>
+        <button class="buttonThree" class:selectedColor3={questionThree} on:click={questionFunc3}>Answer choice three</button>
+        <button class="buttonFour">Answer choice four</button>
+    </div>
+    <div class="group4 space-y-5 space-x-3 px-5">
+        <h3 class="Q4 text-xl"> Question 4</h3>
+        <button class="buttonOne">Answer choice one</button>
+        <button class="buttonTwo" class:selectedColor4={questionFour} on:click={questionFunc4}>Answer choice two</button>
+        <button class="buttonThree">Answer choice three</button>
+        <button class="buttonFour">Answer choice four</button>
+    </div>
+    <a href="/ChosenTeam">
+        <button class="btn pButton font-bold">Next</button>
+    </a>
 </body>
 
 <style>
     body{
-        /* background-color: #7A1E71; */
         font-family: 'Open Sans', sans;
-        /* align-items: center; */
+        background: linear-gradient(180deg, #E36C8F -50%, #7A1E71 100%);
+        height: 1480px;
+    }
+
+    .flex {
+        display: flex;
+        /* Optional: Adjust other flex properties if needed */
+    }
+
+    .title {
+        position: absolute;
+        width: 100%; /* Adjusted for full width */
+        text-align: center;
+        top: 4.27%;
+        font-size: 40px;
+        color: #FFF1F5;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .description {
+        position: absolute;
+        width: 83%; /* Adjusted for padding */
+        top: 19%;
+        left: 8%;
+        text-align: center;
+        color: #FFF1F5;
+        margin: 0 auto; /* Center in the available space */
+    }
+
+    .rest-of-team {
+        position: absolute;
+        width: 86%; /* Adjusted for padding */
+        top: 14%;
+        left: 8%;
+        line-height: 32px;
+        text-align: center;
+        color: #FFF1F5;
+        margin: 0 auto; /* Center in the available space */
+    }
+    .group1{
+        position: absolute;
+        margin-top: 75%;
+    }
+
+    .Q1 {
+        position: relative;
+        width: 86%; /* Adjusted for padding */
+        line-height: 32px;
+        color: #FFF1F5;
+        margin: 0 auto; /* Center in the available space */
+    }
+
+    .group2{
+        position: absolute;
+        margin-top: 140%;
+    }
+
+    .Q2 {
+        position: relative;
+        width: 86%; /* Adjusted for padding */
+        line-height: 32px;
+        color: #FFF1F5;
+        margin: 0 auto; /* Center in the available space */
+    }
+
+    .group3{
+        position: absolute;
+        margin-top: 205%;
+    }
+
+    .Q3 {
+        position: relative;
+        width: 86%; /* Adjusted for padding */
+        line-height: 32px;
+        color: #FFF1F5;
+        margin: 0 auto; /* Center in the available space */
+    }
+
+    .group4{
+        position: absolute;
+        margin-top: 270%;
+    }
+
+    .Q4 {
+        position: relative;
+        width: 86%; /* Adjusted for padding */
+        line-height: 32px;
+        color: #FFF1F5;
+        margin: 0 auto; /* Center in the available space */
+    }
+
+    .buttonOne{
+        position: relative;
+        border: none;
+        color: black;
+        width: 165px;
+        height: 70px; 
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+        background: #FFCFDE;
+        box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
+    }
+
+    .buttonTwo{
+        position: relative;
+        border: none;
+        color: black;
+        width: 165px;
+        height: 70px; 
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+        background: #FFCFDE;
+        box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
+    }
+
+    .buttonThree{
+        position: relative;
+        border: none;
+        color: black;
+        width: 165px;
+        height: 70px; 
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+        background: #FFCFDE;
+        box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
+    }
+
+    .buttonFour{
+        position: relative;
+        border: none;
+        color: black;
+        width: 165px;
+        height: 70px; 
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+        background: #FFCFDE;
+        box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
+    }
+
+    .pButton{
+        background: linear-gradient(90deg, #FFCDE8 20%, #DF86E4 100%);
+        margin-left: 23%;
+        margin-top: 1380px;
+        position:absolute;
+        width: 230px;
+        height: 50px; 
+        border-radius: 15px;
+        font-size: 16px;
+    }
+
+    .selectedColor{
+        background-color: #D1678E;
+    }
+
+    .selectedColor2{
+        background-color: #D1678E;
+    }
+
+    .selectedColor3{
+        background-color: #D1678E;
+    }
+
+    .selectedColor4{
+        background-color: #D1678E;
     }
 </style>
