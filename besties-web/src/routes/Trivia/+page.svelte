@@ -92,8 +92,8 @@
     <div class = "shadowed-image">
         <div class = "first-image">
           <div class="image-container">
-            <img src="cat.png" alt="Image 3" class="image" />
-            <p class="text">Math 3</p>
+            <img src="ponyo.jpg" alt="Image 3" class="image" />
+            <p class="text">Ghibli</p>
           </div>
         </div>
 
