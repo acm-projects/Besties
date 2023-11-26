@@ -39,14 +39,14 @@
         <button class="buttonFour">😈</button>
     </div>
     <div class="group3 space-y-5 space-x-3 px-5">
-        <h3 class="Q3 text-xl">Which one?</h3>
+        <h3 class="Q3 text-xl">What is your favorite taste?</h3>
         <button class="buttonOne">Salty</button>
         <button class="buttonTwo">Spicy</button>
         <button class="buttonThree" class:selectedColor3={questionThree} on:click={questionFunc3}>Sweet</button>
         <button class="buttonFour">Sour</button>
     </div>
     <div class="group4 space-y-5 space-x-3 px-5">
-        <h3 class="Q4 text-xl">Favorite drink?</h3>
+        <h3 class="Q4 text-xl">What is your favorite drink?</h3>
         <button class="buttonOne">Coffee</button>
         <button class="buttonTwo" class:selectedColor4={questionFour} on:click={questionFunc4}>Boba</button>
         <button class="buttonThree">Tea</button>
