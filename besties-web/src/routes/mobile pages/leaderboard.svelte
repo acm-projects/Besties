@@ -241,7 +241,7 @@
     border-radius: 10px;
   }
 
-  /* 500pt */
+  /* 50pt */
   .text-5 {
     position: absolute;
     width: 45px;
