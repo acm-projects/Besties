@@ -1,9 +1,28 @@
 <script>
 
-	let displayInt = 0;
-	function visibleChange2(){
-		displayInt++;
-	}
+  import { scaleLinear } from 'd3-scale';
+	import { fly, fade } from 'svelte/transition';
+    
+  // let visible = true; //decides if intial message should fade out
+  // let visible2 = false; //decided if scores should fade in
+
+  
+  // function handleClick(_event) { //used quick fix here
+  //   visible = false;
+  //   visible2 = true;
+  // }
+  
+  // -- CHANGE PLAYERNUM --
+  let displayInt = 0;
+  function increaseNum(){
+    displayInt = 2;
+  }
+  setTimeout(increaseNum, 2000);
+
+  
+  // function visibleChange2(){
+  //   setTimeout;
+  // }
     
   // State to store the answers to each question
   let answers = {
@@ -275,7 +294,7 @@
         <button class="submit-button">Start Game!</button>
       </a>
       <button class="playerBox font-bold">{displayInt}</button>
-      <button class="text-accent player-text text-3xl font-bold" on:click={visibleChange2}>Players</button>
+      <button class="text-accent player-text text-3xl font-bold">Players</button>
     </topHeader>
     <div class="group1 space-y-50 space-x-60 px-6">
       <h3 class="Q1 text-xl"> </h3>
