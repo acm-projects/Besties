@@ -7,10 +7,10 @@
     }
   
     const teamMembers: TeamMember[] = [
-      { name: 'Petals', top: '40%' },
-      { name: 'Sisi', top: '51%' },
-      { name: 'Xander', top: '62%' },
-      { name: 'Varshni', top: '73%' },
+      { name: 'You do not have any team members 🙁', top: '40%' },
+      // { name: 'Sisi', top: '51%' },
+      // { name: 'Petals', top: '62%' },
+      // { name: 'Varshni', top: '73%' },
     ];
 </script>
 
@@ -71,7 +71,7 @@
     .team-member {
       position: absolute;
       width: 322px;
-      height: 66px;
+      height: 110px;
       left: 45px;
       background: #FFCFDE;
       border-radius: 10px;
