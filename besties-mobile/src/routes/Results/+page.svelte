@@ -314,7 +314,9 @@
   }
 </style>
 
-<div class="mask-group">
+<body>
+  <img src="resultsPage.png" alt="Image 3"/>
+  <!-- <div class="mask-group">
   <div class="group-12">
     <div class="iphone">
       <div class="rectangle-1"></div>
@@ -349,4 +351,7 @@
 </div>
 
 <div class="vector-1"></div>
-<div class="vector-2"></div>
+<div class="vector-2"></div> -->
+
+</body>
+
