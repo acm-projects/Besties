@@ -122,7 +122,7 @@
 
     <topHeader class="grid w-screen rounded-b-2xl bg-info space-y-1">
         <span class="flex">
-            <h1 class="text-secondary text-m font-bold">Team {teams[0]}</h1>
+            <h1 class="text-secondary text-m font-bold">{teams[0]}</h1>
             <h1 class="text-secondary text-m font-bold topHeader-points">{questions[qNum].pointsEarned} points</h1>
         </span>
 
@@ -202,8 +202,7 @@
                     <span>
                         <select class="select select-bordered w-25 max-w-xs">
                             <option disabled selected>Teams</option>
-                            <option>Han Solo</option>
-                            <option>Greedo</option>
+                            <option>Team 2</option>
                         </select>
                     </span>
                 
@@ -219,8 +218,7 @@
                     <span>
                         <select class="select select-bordered w-25 max-w-xs">
                             <option disabled selected>Teams</option>
-                            <option>Han Solo</option>
-                            <option>Greedo</option>
+                            <option>Team 2</option>
                         </select>
                     </span>
                 </button>
@@ -235,8 +233,7 @@
                     <span>
                         <select class="select select-bordered w-25 max-w-xs">
                             <option disabled selected>Teams</option>
-                            <option>Han Solo</option>
-                            <option>Greedo</option>
+                            <option>Team 2</option>
                         </select>
                     </span>
                 </button>
@@ -387,7 +384,7 @@
 
     .topHeader-points{
         /* padding-top: -40px; */
-        padding-left: 180px;
+        padding-left: 230px;
         /* position:fixed; */
     }
 
