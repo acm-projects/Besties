@@ -27,6 +27,10 @@
     margin-bottom: 50px;
   }
 
+  .logo{
+    height:100px;
+  }
+
 
   img {
     max-width:  100%;
@@ -47,7 +51,7 @@
   }
 
   .page{
-    background-color: pink;
+    /* background-color: pink; */
     height: 100vh;
     border: 10px;
 
@@ -77,10 +81,26 @@
       color: purple;
   }   
 
+  topHeader{
+      height:200px;
+      padding-top: 20px;
+      padding-bottom: 15px;
+      /* padding-right: 30px; */
+    }
+
+    .top-text{
+      margin-left: 680px;
+      align-self: center;
+    }
+
 </style>
 
-<div class="page">
-
+<div class="page h-screen w-screen bg-gradient-to-br from-rose-400 via-pink-400 to-fuchsia-400 ...">
+  <topHeader class="grid w-screen rounded-b-2xl bg-info">
+    <!-- svelte-ignore a11y-img-redundant-alt -->
+    <img src="Besties_logo_2.png" alt="Image 3"/>
+    <h1 class="text-accent top-text text-3xl font-bold">Enter the code below to join the game</h1>
+  </topHeader>
     <div class="paragraph-container">
         <p class="search-text-margin">Search</p>
         <div class = "sqaure"></div>

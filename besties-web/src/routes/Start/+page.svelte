@@ -69,14 +69,14 @@
 
     .description {
       position: absolute;
-      width: 1200px;
-      height: 58px;
-      left: 120px;
-      top: 268px;
+      /* width: 1200px;
+      height: 58px; */
+      left: 180px;
+      top: 320px;
       /* font-family: 'Average Sans', sans-serif; */
       /* font-family: 'Open Sans', sans; */
       font-weight: 590;
-      font-size: 30px;
+      font-size: 42px;
       /* line-height: 58px; */
       text-align: center;
       color: #fcdeed;
@@ -107,76 +107,80 @@
 
     .submit-button {
       position: absolute;
-      left: 88%;
+      left: 91%;
       /* bottom: 90px; */
-      top: 130px;
+      top: 145px;
       transform: translateX(-50%);
       padding: 10px 20px;
-      font-size: 24px;
+      font-size: 30px;
       cursor: pointer;
       background-color: #752575;
       color: #fcdeed;
       border: none;
       border-radius: 5px;
-      height:70px;
+      height:100px;
+      width: 200px;
       box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
     }
 
     topHeader{
-      height:240px;
-      padding-top: 20px;
+      height:280px;
+      padding-top: 40px;
       padding-bottom: 15px;
       /* padding-right: 30px; */
     }
 
     .codeBox{
-      position: relative;
+      position: absolute;
       border: none;
       color: #8B1D3E;
       width: 350px;
       height: 120px; 
       text-align: center;
       display: inline-block;
-      font-size: 60px;
+      font-size: 70px;
       cursor: pointer;
       border-radius: 5px;
       background: #fcdeed;
       /* box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25); */
-      margin-left: 540px;
+      margin-left: 790px;
+      margin-top: 80px;
     }
 
     .playerBox{
       position: absolute;
       border: none;
       color: #8B1D3E;
-      width: 110px;
-      height: 70px; 
+      width: 140px;
+      height: 100px; 
       text-align: center;
       display: inline-block;
-      font-size: 45px;
+      font-size: 50px;
       cursor: pointer;
       border-radius: 5px;
       background: #fcdeed;
       /* box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25); */
       margin-left: 80px;
-      margin-top: 120px;
+      margin-top: 100px;
     }
 
     .player-text{
       position:absolute;
-      margin-left: 200px;
-      margin-top:140px;
+      margin-left: 235px;
+      margin-top:133px;
       color: #8B1D3E;
+      font-size: 40px;
     }
 
     .top-text{
-      margin-left: 450px;
+      margin-left: 550px;
+      font-size: 48px;
     }
 
     .group1{
       position: absolute;
-      margin-top: 7%;
-      margin-left: 4%;
+      margin-top: 9%;
+      margin-left: 11%;
     }
 
     .Q1 {
@@ -189,8 +193,8 @@
 
     .group2{
         position: absolute;
-        margin-top: 19%;
-        margin-left: 4%;
+        margin-top: 21%;
+        margin-left: 11%;
     }
 
     .Q2 {
@@ -205,11 +209,11 @@
       position: relative;
       border: none;
       color: black;
-      width: 270px;
-      height: 120px; 
+      width: 370px;
+      height: 220px; 
       text-align: center;
       display: inline-block;
-      font-size: 18px;
+      font-size: 26px;
       cursor: pointer;
       border-radius: 6px;
       background: #FFCFDE;
@@ -220,11 +224,11 @@
       position: relative;
       border: none;
       color: black;
-      width: 270px;
-      height: 120px; 
+      width: 370px;
+      height: 220px;
       text-align: center;
       display: inline-block;
-      font-size: 18px;
+      font-size: 26px;
       cursor: pointer;
       border-radius: 6px;
       background: #FFCFDE;
@@ -235,11 +239,11 @@
       position: relative;
       border: none;
       color: black;
-      width: 270px;
-      height: 120px;
+      width: 370px;
+      height: 220px;
       text-align: center;
       display: inline-block;
-      font-size: 18px;
+      font-size: 26px;
       cursor: pointer;
       border-radius: 6px;
       background: #FFCFDE;
@@ -250,11 +254,11 @@
       position: relative;
       border: none;
       color: black;
-      width: 270px;
-      height: 120px;
+      width: 370px;
+      height: 220px;
       text-align: center;
       display: inline-block;
-      font-size: 18px;
+      font-size: 26px;
       cursor: pointer;
       border-radius: 6px;
       background: #FFCFDE;
@@ -273,12 +277,12 @@
       <button class="playerBox font-bold">{displayInt}</button>
       <button class="text-accent player-text text-3xl font-bold" on:click={visibleChange2}>Players</button>
     </topHeader>
-    <div class="group1 space-y-5 space-x-60 px-5">
+    <div class="group1 space-y-50 space-x-60 px-6">
       <h3 class="Q1 text-xl"> </h3>
       <button class="buttonOne">What is your favorite hobby?</button>
       <button class="buttonTwo" >What is your most used emoji?</button>
     </div>
-    <div class="group2 space-y-5 space-x-60 px-5">
+    <div class="group2 space-y-20 space-x-60 px-5">
       <h3 class="Q1 text-xl"> </h3>
       <button class="buttonThree">What is your favorite taste?</button>
       <button class="buttonFour">What is your favorite drink?</button>
@@ -286,9 +290,7 @@
     
     <!-- <div class="header-rectangle"></div> -->
     <!-- <h1 class="pre-game-title">Pre-Game Time!</h1> -->
-    <p class="description ">
-      Pre-Game Time! Answer these 4 questions to determine your besties for the game!
-    </p>
+    <p class="description "> Pre-Game Time! Answer these 4 questions to determine your besties for the game!</p>
     <!-- Questions -->
     <!-- <div class="question" style="top: 441px; left: 222px;">
       <input type="text" placeholder="1: Question?" bind:value={answers.q1} on:input={(event) => handleInputChange('q1', event)} />
