@@ -2,27 +2,17 @@
 
   import { scaleLinear } from 'd3-scale';
 	import { fly, fade } from 'svelte/transition';
-    
-  // let visible = true; //decides if intial message should fade out
-  // let visible2 = false; //decided if scores should fade in
+  
+  let visible = true; //decides if intial message should fade out
+    let visible2 = false; //decided if scores should fade in
 
-  
-  // function handleClick(_event) { //used quick fix here
-  //   visible = false;
-  //   visible2 = true;
-  // }
-  
-  // -- CHANGE PLAYERNUM --
-  let displayInt = 0;
-  function increaseNum(){
-    displayInt = 2;
-  }
-  setTimeout(increaseNum, 2000);
-
-  
-  // function visibleChange2(){
-  //   setTimeout;
-  // }
+    /**
+   * @param {any} _event
+   */
+    function handleClick(_event) { //used quick fix here
+        visible = false;
+        visible2 = true;
+	}
     
   // State to store the answers to each question
   let answers = {
@@ -175,12 +165,20 @@
       text-align: center;
       display: inline-block;
       font-size: 50px;
-      cursor: pointer;
+      /* cursor: pointer; */
       border-radius: 5px;
       background: #fcdeed;
       /* box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25); */
       margin-left: 80px;
       margin-top: 100px;
+    }
+
+    .playerNumText{
+      position: absolute;
+      color: #8B1D3E;
+      font-size: 55px;
+      margin-left: 135px;
+      margin-top: 123px;
     }
 
     .player-text{
@@ -190,6 +188,7 @@
       color: #8B1D3E;
       font-size: 40px;
     }
+
 
     .top-text{
       margin-left: 550px;
@@ -284,6 +283,7 @@
       box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
     }
 
+
   </style>
 
   <div class="pre-game-screen h-screen w-screen bg-gradient-to-br from-rose-400 via-pink-400 to-fuchsia-400 ...">
@@ -293,8 +293,22 @@
       <a href="/Leaderboard">
         <button class="submit-button">Start Game!</button>
       </a>
-      <button class="playerBox font-bold">{displayInt}</button>
-      <button class="text-accent player-text text-3xl font-bold">Players</button>
+
+    <!-- <button class="playerBox font-bold">
+      <div class="text-center text-6xl">0</div>
+    </button> -->
+
+    <button on:click={handleClick} class="playerBox font-bold">
+      {#if visible}
+        <div transition:fade={{ delay: 1500, duration: 200 }} class="text-center text-6xl">0</div>
+      {/if}
+    </button>
+
+    {#if visible2}
+		<div transition:fade={{ delay: 2000, duration: 200 }} class="text-center playerNumText font-bold text-6xl">2</div>
+    {/if}  
+
+    <button class="text-accent player-text text-3xl font-bold">Players</button>
     </topHeader>
     <div class="group1 space-y-50 space-x-60 px-6">
       <h3 class="Q1 text-xl"> </h3>
