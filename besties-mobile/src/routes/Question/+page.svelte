@@ -68,7 +68,7 @@
     }
 
     // -- TIMER COUNTDOWN --
-    let original = 20; // total num of seconds
+    let original = 30; // total num of seconds
 	let timer = tweened(original)
     setInterval(() => {
             if ($timer > 0) $timer--;
@@ -147,7 +147,7 @@
 
     <!-- Radial Timer Countdown -->
     <timer>
-            <div class="radial-progress text-primary bg-white" style="--value:{seconds}*100/20; --size:4rem;">{seconds}</div>
+            <div class="radial-progress text-primary bg-white" style="--value:{seconds}*100/30; --size:4rem;">{seconds}</div>
     </timer>
 
 
@@ -172,7 +172,7 @@
     <div class="modal-box">
         <h3 class="font-bold text-4xl text-center">Oh No! 😱</h3>
         <h3 class="py-3 font-bold text-4xl text-center">You have been frozen by</h3>
-        <h3 class="py-3 font-bold text-4xl text-secondary text-center">Team Sisi!</h3>
+        <h3 class="py-3 font-bold text-4xl text-secondary text-center">Team 2!</h3>
         <h3 class="py-5 font-bold text-2xl text-center">You won't be able to answer this question!</h3>
     </div>
     <form method="dialog" class="modal-backdrop">
