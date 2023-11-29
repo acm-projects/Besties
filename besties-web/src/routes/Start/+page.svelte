@@ -81,7 +81,7 @@
       /* width: 1200px;
       height: 58px; */
       left: 60px;
-      top: 320px;
+      top: 240px;
       /* font-family: 'Average Sans', sans-serif; */
       /* font-family: 'Open Sans', sans; */
       font-weight: 590;
@@ -118,7 +118,7 @@
       position: absolute;
       left: 89%;
       /* bottom: 90px; */
-      top: 145px;
+      top: 90px;
       transform: translateX(-50%);
       padding: 10px 20px;
       font-size: 30px;
@@ -127,7 +127,7 @@
       color: #fcdeed;
       border: none;
       border-radius: 5px;
-      height:100px;
+      height:80px;
       width: 200px;
       box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
     }
@@ -152,8 +152,8 @@
       border-radius: 5px;
       background: #fcdeed;
       /* box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25); */
-      margin-left: 590px;
-      margin-top: 80px;
+      margin-left: 660px;
+      margin-top: 60px;
     }
     
 
@@ -161,39 +161,39 @@
       position: absolute;
       border: none;
       color: #8B1D3E;
-      width: 140px;
-      height: 100px; 
+      width: 120px;
+      height: 80px; 
       text-align: center;
       display: inline-block;
-      font-size: 50px;
+      font-size: 45px;
       /* cursor: pointer; */
       border-radius: 5px;
       background: #fcdeed;
       /* box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25); */
       margin-left: 80px;
-      margin-top: 100px;
+      margin-top: 50px;
     }
 
-    .playerNumText{
+    .playerNumText{   /* this is for number 2 */
       position: absolute;
       color: #8B1D3E;
-      font-size: 55px;
-      margin-left: 135px;
-      margin-top: 123px;
+      font-size: 45px;
+      margin-left: 127px;
+      margin-top: 55px;
     }
 
     .player-text{
       position:absolute;
       margin-left: 235px;
-      margin-top:133px;
+      margin-top:70px;
       color: #8B1D3E;
       font-size: 40px;
     }
 
 
     .top-text{
-      margin-left: 355px;
-      font-size: 48px;
+      margin-left: 425px;
+      font-size: 40px;
     }
 
     .group1{
@@ -301,12 +301,12 @@
 
     <button on:click={handleClick} class="playerBox font-bold">
       {#if visible}
-        <div transition:fade={{ delay: 1500, duration: 200 }} class="text-center text-6xl">0</div>
+        <div transition:fade={{ delay: 1500, duration: 200 }} class="text-center">0</div>
       {/if}
     </button>
 
     {#if visible2}
-		<div transition:fade={{ delay: 2000, duration: 200 }} class="text-center playerNumText font-bold text-6xl">2</div>
+		<div transition:fade={{ delay: 2000, duration: 200 }} class="text-center playerNumText font-bold">2</div>
     {/if}  
 
     <button class="text-accent player-text text-3xl font-bold">Players</button>
