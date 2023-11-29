@@ -75,7 +75,7 @@
 	<button on:click={handleClick}>
         {#if visible}
             <div transition:fade={{ delay: 2500, duration: 200 }} class="text-center text-6xl">
-				<div class="group1 space-x-20 px-6">
+				<div class="group1 space-x-40 px-6">
 					<div class="buttonOne"></div>
 					<div class="buttonTwo" ></div>
 				</div>
@@ -85,7 +85,7 @@
     
     {#if visible2}
 		<div transition:fade={{ delay: 3000, duration: 200 }}>
-			<div class="group2 space-x-20 px-6">
+			<div class="group2 space-x-40 px-6">
 				<div class="buttonOneSecond"></div>
 				<div class="buttonTwoSecond" ></div>
 			</div>
@@ -225,7 +225,7 @@
 	.group1{
       position: absolute;
       margin-top: 21%;
-      margin-left: 10%;
+      margin-left: 9%;
     }
 
 	.buttonOne{
@@ -259,7 +259,7 @@
 	.group2{
       position: absolute;
       margin-top: 7%;
-      margin-left: 10%;
+      margin-left: 9%;
     }
 
 	.buttonOneSecond{
@@ -292,14 +292,14 @@
 
 	.textOne{
 		position:absolute;
-		margin-left:25%;
+		margin-left:23%;
 		margin-top: 31%;
 		color: #fcdeed;
 	}
 
 	.textTwo{
 		position:absolute;
-		margin-left:66%;
+		margin-left:67%;
 		margin-top: 31%;
 		color: #fcdeed;
 	}
