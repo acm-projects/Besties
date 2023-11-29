@@ -133,7 +133,7 @@
     }
 
     topHeader{
-      height:280px;
+      height:200px;
       padding-top: 40px;
       padding-bottom: 15px;
       /* padding-right: 30px; */
@@ -143,11 +143,11 @@
       position: absolute;
       border: none;
       color: #8B1D3E;
-      width: 350px;
-      height: 120px; 
+      width: 200px;
+      height: 80px; 
       text-align: center;
       display: inline-block;
-      font-size: 70px;
+      font-size: 40px;
       cursor: pointer;
       border-radius: 5px;
       background: #fcdeed;
@@ -155,6 +155,7 @@
       margin-left: 590px;
       margin-top: 80px;
     }
+    
 
     .playerBox{
       position: absolute;
@@ -288,7 +289,7 @@
 
   <div class="pre-game-screen h-screen w-screen bg-gradient-to-br from-rose-400 via-pink-400 to-fuchsia-400 ...">
     <topHeader class="grid w-screen rounded-b-2xl bg-info">
-      <h1 class="text-accent top-text text-3xl font-bold">Enter the code below to join the game</h1>
+      <h1 class="text-accent top-text text-2xl font-bold">Enter the code below to join the game</h1>
       <button class="codeBox font-bold">s 1 A y</button>
       <a href="/Leaderboard">
         <button class="submit-button">Start Game!</button>
