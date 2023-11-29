@@ -80,12 +80,12 @@
       position: absolute;
       /* width: 1200px;
       height: 58px; */
-      left: 60px;
-      top: 240px;
+      left: 110px;
+      top: 220px;
       /* font-family: 'Average Sans', sans-serif; */
       /* font-family: 'Open Sans', sans; */
       font-weight: 590;
-      font-size: 38px;
+      font-size: 35px;
       /* line-height: 58px; */
       text-align: center;
       color: #fcdeed;
@@ -118,7 +118,7 @@
       position: absolute;
       left: 89%;
       /* bottom: 90px; */
-      top: 90px;
+      top: 80px;
       transform: translateX(-50%);
       padding: 10px 20px;
       font-size: 30px;
@@ -127,7 +127,7 @@
       color: #fcdeed;
       border: none;
       border-radius: 5px;
-      height:80px;
+      height:100px;
       width: 200px;
       box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25);
     }
@@ -198,7 +198,7 @@
 
     .group1{
       position: absolute;
-      margin-top: 9%;
+      margin-top: 6%;
       margin-left: 4%;
     }
 
@@ -212,7 +212,7 @@
 
     .group2{
         position: absolute;
-        margin-top: 21%;
+        margin-top: 17%;
         margin-left: 4%;
     }
 
