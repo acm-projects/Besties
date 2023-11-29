@@ -80,12 +80,12 @@
       position: absolute;
       /* width: 1200px;
       height: 58px; */
-      left: 180px;
+      left: 60px;
       top: 320px;
       /* font-family: 'Average Sans', sans-serif; */
       /* font-family: 'Open Sans', sans; */
       font-weight: 590;
-      font-size: 42px;
+      font-size: 38px;
       /* line-height: 58px; */
       text-align: center;
       color: #fcdeed;
@@ -116,7 +116,7 @@
 
     .submit-button {
       position: absolute;
-      left: 91%;
+      left: 89%;
       /* bottom: 90px; */
       top: 145px;
       transform: translateX(-50%);
@@ -152,7 +152,7 @@
       border-radius: 5px;
       background: #fcdeed;
       /* box-shadow: 0px 4px 6px 0px rgba(62, 62, 62, 0.25); */
-      margin-left: 790px;
+      margin-left: 590px;
       margin-top: 80px;
     }
 
@@ -191,14 +191,14 @@
 
 
     .top-text{
-      margin-left: 550px;
+      margin-left: 355px;
       font-size: 48px;
     }
 
     .group1{
       position: absolute;
       margin-top: 9%;
-      margin-left: 11%;
+      margin-left: 4%;
     }
 
     .Q1 {
@@ -212,7 +212,7 @@
     .group2{
         position: absolute;
         margin-top: 21%;
-        margin-left: 11%;
+        margin-left: 4%;
     }
 
     .Q2 {
@@ -227,11 +227,11 @@
       position: relative;
       border: none;
       color: black;
-      width: 370px;
-      height: 220px; 
+      width: 320px;
+      height: 180px; 
       text-align: center;
       display: inline-block;
-      font-size: 26px;
+      font-size: 23px;
       cursor: pointer;
       border-radius: 6px;
       background: #FFCFDE;
@@ -242,11 +242,11 @@
       position: relative;
       border: none;
       color: black;
-      width: 370px;
-      height: 220px;
+      width: 320px;
+      height: 180px; 
       text-align: center;
       display: inline-block;
-      font-size: 26px;
+      font-size: 23px;
       cursor: pointer;
       border-radius: 6px;
       background: #FFCFDE;
@@ -257,11 +257,11 @@
       position: relative;
       border: none;
       color: black;
-      width: 370px;
-      height: 220px;
+      width: 320px;
+      height: 180px; 
       text-align: center;
       display: inline-block;
-      font-size: 26px;
+      font-size: 23px;
       cursor: pointer;
       border-radius: 6px;
       background: #FFCFDE;
@@ -272,11 +272,11 @@
       position: relative;
       border: none;
       color: black;
-      width: 370px;
-      height: 220px;
+      width: 320px;
+      height: 180px; 
       text-align: center;
       display: inline-block;
-      font-size: 26px;
+      font-size: 23px;
       cursor: pointer;
       border-radius: 6px;
       background: #FFCFDE;
@@ -310,12 +310,12 @@
 
     <button class="text-accent player-text text-3xl font-bold">Players</button>
     </topHeader>
-    <div class="group1 space-y-50 space-x-60 px-6">
+    <div class="group1 space-y-30 space-x-60 px-6">
       <h3 class="Q1 text-xl"> </h3>
       <button class="buttonOne">What is your favorite hobby?</button>
       <button class="buttonTwo" >What is your most used emoji?</button>
     </div>
-    <div class="group2 space-y-20 space-x-60 px-5">
+    <div class="group2 space-y-10 space-x-60 px-5">
       <h3 class="Q1 text-xl"> </h3>
       <button class="buttonThree">What is your favorite taste?</button>
       <button class="buttonFour">What is your favorite drink?</button>
